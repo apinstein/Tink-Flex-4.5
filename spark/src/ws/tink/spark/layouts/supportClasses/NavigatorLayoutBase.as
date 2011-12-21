@@ -918,7 +918,7 @@ package ws.tink.spark.layouts.supportClasses
 				case LayoutAxis.VERTICAL :
 				{
 					target.setContentSize( unscaledWidth, unscaledHeight * _numElementsInLayout );
-					if( scroller ) scroller.verticalScrollBar.stepSize = unscaledHeight;
+					if( scroller && scroller.verticalScrollBar) scroller.verticalScrollBar.stepSize = unscaledHeight;
 					break;
 				}
 			}
